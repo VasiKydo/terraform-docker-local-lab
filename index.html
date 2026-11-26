@@ -1,9 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Docker & Terraform Lab</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terraform &amp; Docker Lab</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      background: #f3f5f8;
+      color: #1f2937;
+    }
+    .card {
+      max-width: 460px;
+      padding: 28px;
+      border-radius: 12px;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      border-top: 5px solid #1b365d;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+      background: #e6f4ea;
+      color: #137333;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #1b365d;
+    }
+    p {
+      margin: 0;
+      line-height: 1.5;
+      color: #4b5563;
+    }
+  </style>
 </head>
 <body>
-    <h1>Service Status: Running inside Docker via Terraform</h1>
+  <div class="card">
+    <span class="badge">Container Running</span>
+    <h1>NGINX Served via Terraform</h1>
+    <p>Custom image built from a Dockerfile and provisioned locally with Terraform.</p>
+  </div>
 </body>
 </html>
