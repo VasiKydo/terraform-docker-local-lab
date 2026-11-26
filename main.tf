@@ -1,16 +1,16 @@
 terraform {
   required_providers {
-    docker = {
-      source  = "kreuzwerker/docker"
+    docker = { #local name
+      source  = "kreuzwerker/docker" #official provider
       version = "~> 3.0"
     }
   }
 }
 
-provider "docker" {}
+provider "docker" {} #enabling the docker provider with the above set-up
 
-resource "docker_image" "web_app" {
-  name = "my-local-web:latest"
+resource "docker_image" "web_app" { #"web_app" is the local name of the resource and is of a type "docker_image"
+  name = "my-local-web:latest" #the name of the Image that will be created
   build {
     context = "."
   }
